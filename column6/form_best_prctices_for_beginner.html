@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form best practice</title>
+</head>
+
+<body>
+    <!-- Best Practice Form https://code.tutsplus.com/tutorials/20-html-forms-best-practices-for-beginners--net-6593 -->
+    <ol>
+        <h2>Sematic</h2>
+        <li>use fieldset tag to capsulate fields</li>
+        <!-- <fieldset></fieldset> -->
+        <li>label fieldset with legend tag</li>
+        <!-- <fieldset>
+            <legend>Topic</legend>
+        </fieldset> -->
+        <li>naming input tag</li>
+        <!-- <input type="text" name="name" id="name"> -->
+        <li>Use label element for input tag</li>
+        <!-- <label for="list">label
+            <input type="checkbox" name="list" id="list">
+        </label> -->
+        <li>give label the for element</li>
+        <!-- <label for="id"></label> -->
+        <li>use optgroup tag to categorize option tag</li>
+        <select name="list" id="list">
+            <optgroup label="Country">
+                <option value="Thailand">TH</option>
+                <option value="England">EN</option>
+                <option value="USA">US</option>
+                <option value="Dutchland">DL</option>
+                <option value="China">PEK</option>
+            </optgroup>
+            <optgroup label="Color">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">blue</option>
+            </optgroup>
+        </select>
+        <li>Always assign complete attribute</li>
+        <li>use submit button instead of submit input</li>
+        <br>
+        <h2>Accessibility</h2>
+        <li>use tabindex attribute for input</li>
+        <input type="text" name="tab" id="tab" tabindex="1">
+        <input type="text" name="tab" id="tab" tabindex="3">
+        <input type="text" name="tab" id="tab" tabindex="2">
+        <li>define access key when appropriate</li>
+        <li>use focus technique</li>
+        <!-- <style>
+            input[type=text]:hover {
+                background-color: cornflowerblue;
+                border-color: darkcyan;
+            }
+        </style> -->
+        <li>consider people who use screen reader
+            <ul>
+                <li>use clear label</li>
+                <li>exception : radio button &amp; checkbox</li>
+            </ul>
+        </li>
+        <br>
+        <h2>Functionality</h2>
+        <li>use correct content type in input tag</li>
+        <li>know when to GET when to POST</li>
+        <li>validate on client side and server side</li>
+        <li>give user warning</li>
+        <li>using AJAX to submit form</li>
+        <li>load script after load content</li>
+        <br>
+        <h2>Design</h2>
+        <li>style forms consistently</li>
+        <li>use jqTransform jQuery plugin to transform platform <br> <a href="http://www.dfc-e.com/metiers/multimedia/opensource/jqtransform/">link</a></li>
+        <li>inspired by other
+            <ul>
+                <li><a href="https://www.smashingmagazine.com/2015/05/designing-for-explicit-choice/">great roundup of forms</a></li>
+                <li><a href="https://www.smileycat.com/comment-forms-design-gallery/">blog comment forms</a></li>
+            </ul>
+        </li>
+    </ol>
+</body>
+
+</html>
