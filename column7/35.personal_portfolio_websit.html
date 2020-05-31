@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="35.porfolio.css" lang="text/css">
+    <script src="https://kit.fontawesome.com/e20b5b088a.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <!-- Project 3 - Personal Portfolio Website -->
+
+    <!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+    User Story #2: The welcome section should have an h1 element that contains text. -->
+    <!-- User Story #10: The height of the welcome section should be equal to the height of the viewport. -->
+
+    <!-- User Story #3: My portfolio should have a projects section with an id of projects.
+    User Story #4: The projects section should contain at least one element with a class of project-tile to hold a
+    project.
+    User Story #5: The projects section should contain at least one link to a project. -->
+
+    <!-- User Story #6: My portfolio should have a navbar with an id of navbar.
+    User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of
+    the page. -->
+    <!-- User Story #11: The navbar should always be at the top of the viewport. -->
+
+    <!-- User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a
+    new tab. -->
+
+    <!-- User Story #9: My portfolio should have at least one media query. -->
+
+    <section id="header">
+        <div class="header-layout">
+            <div class="brand-g">
+                <div class="logo">
+                    <img src="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" alt="logo">
+                </div>
+                <div class="branding">
+                    <h1>FCC: Personal Portfolio</h1>
+                    <p>freeCodeCamp.org <button>&#43;Follow</button></p>
+                </div>
+            </div>
+            <div class="button-g">
+                <div class="button">
+                    <button class="b"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="button">
+                    <button type="submit" class="a"><i class="far fa-eye"></i> Change View</button>
+                </div>
+                <div class="button">
+                    <button type="menu" class="a">Sign Up</button>
+                </div>
+                <div class="button">
+                    <button type="submit" class="a">Log In</button>
+                </div>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#welcome-section">About</a>
+                </li>
+                <li>
+                    <a href="#project-section">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <div class="container">
+        <div class="wrapper">
+            <div class="content-container">
+                <section id="welcome-section">
+                    <div class="banner">
+                        <h1>Hey I am Mimic</h1>
+                        <p>a web developer</p>
+                    </div>
+                </section>
+                <section id="project-section">
+                    <div class="h2">
+                        <h2>These are some of my projects</h2>
+                    </div>
+                    <div class="tile">
+                        <div class="project-tile">
+                            <div class="img-layout">
+                                <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                                    <div class="img1"></div>
+                                </a>
+                            </div>
+                            <div class="title1">
+                                <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">Tribute Page</a>
+                            </div>
+                        </div>
+                        <div class="project-tile">
+                            <div class="img-layout">
+                                <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ">
+                                    <div class="img2"></div>
+                                </a>
+                            </div>
+                            <div class="title1">
+                                <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ">Random Quote Machine</a>
+                            </div>
+                        </div>
+                        <div class="project-tile">
+                            <div class="img-layout">
+                                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
+                                    <div class="img3"></div>
+                                </a>
+                            </div>
+                            <div class="title1">
+                                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">JavaScript Calculator</a>
+                            </div>
+                        </div>
+                        <div class="project-tile">
+                            <div class="img-layout">
+                                <a href="https://codepen.io/freeCodeCamp/full/mVEJag">
+                                    <div class="img4"></div>
+                                </a>
+                            </div>
+                            <div class="title1">
+                                <a href="https://codepen.io/freeCodeCamp/full/mVEJag">Map Data Across the Globe</a>
+                            </div>
+                        </div>
+                        <div class="project-tile">
+                            <div class="img-layout">
+                                <a href="https://codepen.io/freeCodeCamp/full/wGqEga">
+                                    <div class="img5"></div>
+                                </a>
+                            </div>
+                            <div class="title1">
+                                <a href="https://codepen.io/freeCodeCamp/full/wGqEga">Wikipedia Viewer</a>
+                            </div>
+                        </div>
+                        <div class="project-tile">
+                            <div class="img-layout">
+                                <a href="https://codepen.io/freeCodeCamp/full/KzXQgy">
+                                    <div class="img6"></div>
+                                </a>
+                            </div>
+                            <div class="title1">
+                                <a href="https://codepen.io/freeCodeCamp/full/KzXQgy">Tic Tac Toe Game</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Show all &gt;</button>
+                    </div>
+                </section>
+                <section id="profile-link">
+                    <div class="banner">
+                        <h1 class="bh1">Let's Work together...</h1>
+                        <p class="bp">How do you take your coffee?</p>
+                    </div>
+                    <div class="contact-link">
+                        <a href="" target="_blank">
+                            <i class="fab fa-facebook-square"></i> Facebook
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="fas fa-at"></i> Send a mail</a>
+                        <a href="" target="_blank">
+                            <i class="fas fa-mobile-alt"></i> Call me</a>
+                    </div>
+                </section>
+            </div>
+            <div class="red-sep"></div>
+            <div class="footer">
+                <div class="layout">
+                    <p>**This is a fake portfolio. All The projects and contact details given are not real.</p>
+                    <p>&copy;Created for freeCodeCamp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
